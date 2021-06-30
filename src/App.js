@@ -10,7 +10,7 @@ const App = () => {
       {
         id: 1,
         text: 'learn React',
-        completed: false
+        completed: true
       },
       {
         id: 2,
@@ -25,7 +25,7 @@ const App = () => {
     <div className="contenedor">
       <Header />
       <FormTasks tasks={tasks} setTasks={setTasks} />
-      <ListTasks tasks={tasks}/>
+      <ListTasks tasks={tasks} setTasks={setTasks} />
     </div>
   );
 }
